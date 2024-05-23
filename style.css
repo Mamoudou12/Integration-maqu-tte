@@ -631,6 +631,23 @@ margin-top: 40px;
     color: #e0e0e0;
 }
 
+.contenue img {
+    width: 200px;
+    margin-top: 40px;
+    filter: brightness(0) invert(1);
+}
+
+.reseau {
+    height: 40px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.reseau i {
+    color: #ce1642;
+    font-size: 40px;
+}
+
 .botum {
     border: 1px solid;
 }
