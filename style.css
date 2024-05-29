@@ -8,8 +8,11 @@ header {
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     background-color: rgba(255 255 255 /0.9);
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 0;
+    z-index: 1000;
     
 
     
@@ -66,6 +69,10 @@ h1 , h2 {
     
 }
 
+#history h1 {
+    font-size: 50px;
+}
+
 .history {
         display: flex;
         /* align-items: center; */
@@ -73,6 +80,7 @@ h1 , h2 {
         margin-right: 10%;
         /* height: calc(80vh - 50px);  */
         justify-content: space-between;   
+        
 }
 
 .fi {
@@ -82,54 +90,57 @@ h1 , h2 {
 }
 
 .first {
-    margin-top: 300px;
     margin-left: 500px;
     font-size: 50px;
     color: #ce1642;
+    margin-top: 100px;
 }
-
-
 
 .lorem {
-    font-size: 20px;
-    /* background-color: #ffffff;
-    border: 1px solid #ff007f; */
-    border-radius: 10px;
     width: 40%;
-    /* transform: rotate(-2deg); */
-    margin-top: 20px;
-    height: 400px;
-    align-items: center;
-    line-height: 40px;
-    margin-left: 100px;
-    padding: 30px;
     position: relative;
+    margin-right: 150px;
+   
 }
 
-.lorem p {
-    position: absolute;
-    width: 80%;
-    background-color: #ffffff;
+.paragraph {
+    width: 400px;
+    margin-left: 130px;
     height: 400px;
-    padding: 40px;
-    border: 1px solid #ff007f;
-    border-radius: 10px;
+    background-color: #ffffff;
+    position: relative;
+    left: 33px;
+    border-radius: 15px;
+    border: 1px solid #ff66b2;
+    padding-top: 30px;
 }
 
+.paragraph p {
+    line-height: 20px;
+    color: #404040;
+    text-align: center;
+    line-height: 40px;
+}
+
+.ic {
+  margin-left: 20px;
+}
+
+.is {
+    margin-left: 350px;
+}
 
 .bas {
-    width: 80%;
+    width: 400px;
+    margin-left: 120px;
     height: 400px;
     position: absolute;
     background-color: #ce1642;
+    margin-top: 10px;
     transform: rotate(5deg);
-    padding: 40px;
     -webkit-transform-origin: 100% 100%;
-    left: -16px;
-    top: 50px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
-
 
 
 
@@ -138,12 +149,30 @@ h1 , h2 {
     color: #ffffff;
     /* padding: 10px; */
     font-size:30px;
-    border-bottom-right-radius: 100px;
-    height: 150px;
+    border-bottom-right-radius: 70px;
+    height: 100px;
     margin-top: 120px;
-    box-shadow: 0 15px #ff66b2, 0 25px #ffccff;
-
+    box-shadow: 0 15px #ff66b2, 0 30px #ffccff;
+    /* border: 1px solid black; */
+    width: 500px;
+    text-align: right;
+    
 }
+
+.fabrique h3, h5{
+    margin-right: 60px;
+    line-height: 0;
+    margin-top: 20px;
+    font-size: 30px;
+    
+}
+
+.fabrique h1 {
+    /* margin-left: 400px; */
+    color: #ffffff;
+    margin-right: 60px;
+    line-height: 5px;
+} 
 
 .three { 
         width: 100px;
@@ -151,19 +180,33 @@ h1 , h2 {
         margin-left: 600px;
         display: flex;
         justify-content: space-between;
-        margin-top: 200px;
+        margin-top: 150px;
     }
     
+
+
+    #pedagogie h1{
+        /* border: 1px solid black; */
+        text-align: center;
+        font-size: 50px;
+    }
+
+
+
 
 .container {
     display: flex;
     align-items: center;
     margin-left: 10%;
-    margin-right: 10%;
-    height: calc(80vh - 50px); 
+    margin-right: 5%;
+    /* height:500px; */
     justify-content: space-between; 
-    margin-top: 100px;  
+    margin-top: 200px; 
+    height: 300px;
     
+}
+.lorem img {
+    z-index: 1000;
 }
 
 
@@ -171,10 +214,30 @@ h1 , h2 {
 .active {
     font-size: 20px;
     width: 40%;
-    height: 400px;
     align-items: center;
     line-height: 30px;
     padding: 30px;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.act {
+    font-size: 20px;
+    width: 40%;
+    align-items: center;
+    line-height: 30px;
+    padding: 30px;
+    margin-bottom: 250px;
+}
+
+
+.group {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between; 
+    margin-top: 200px; 
+    height: 300px;
 }
 
 .active h2 {
@@ -187,24 +250,25 @@ h1 , h2 {
     height: 10px;
     margin-left: 600px;
     border-radius: 10px;
+    margin-bottom: 100px;
 }
 
+
 .six {
-    margin-top: 20px;
     width: 85%;
     height: 600px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    /* border: 1px solid black; */
-    /* margin-left: 100px; */
     
 }
+
+
 
 .principeaux {
     color: #ce1642;
     font-size: 35px;
     margin-left: 130px;
-    margin-top: 100px;
+    margin-bottom: 150px;
 }
 
 .lister {
@@ -227,13 +291,16 @@ h1 , h2 {
 }
 
 #valeurs {
-    margin-top: 150px;
+    margin-top: 200px;
     height: 100px;
+    
+
     
 }
 
 #valeurs h1 {
-    margin-left: 600px;
+    text-align: center;
+    font-size: 50px;
 }
 
 .arrow i{
@@ -246,25 +313,30 @@ h1 , h2 {
 .txt {
     /* margin-bottom: 300px; */
     width: 50%;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 45px;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 150px; 
+    margin-left: 60px;
 }
 
 .txt button {
    background-color: #ce1642;
    padding: 10px;
-   width: 120px;
+   width: 160px;
    border-radius: 30px;
    color: #ffffff;
    border: none;
+   height: 50px;
+   
+
+   
 }
 
 
 .pic {
     position: relative;
-    margin-top: 900px;
+    margin-top: 800px;
     
 }
 
@@ -285,6 +357,7 @@ h1 , h2 {
     height: 550px;
     width: 400px;
     border-radius: 10px;
+    margin-left: 10px;
     
  
 }
@@ -325,19 +398,21 @@ h1 , h2 {
 }
 
 #chifre {
-    height: 400px;
     margin-top: 750px;
+    /* border: 1px solid black; */
 }
 
-.title{
+.title h1 {
     height:70px;
     text-align: center;
+    font-size: 50px;
+    
 }
 
 
 .pourcentage {
     height: 200px;
-    margin-top: 60px;
+    margin-top: 20px;
     background-color: #ce1642;
     display: flex;
     justify-content: space-around;
@@ -357,8 +432,9 @@ h1 , h2 {
 }
 
 #equipe {
+    margin-top: 40px;
     /* border: 1px solid black; */
-    height: 600px;
+    margin-bottom: 2X00px;
 }
 
 .coach .icon {
@@ -442,7 +518,7 @@ margin-top: 40px;
 
 #recrutement {
     height: 1000px;
-    margin-top: 150px;
+    /* border: 1px solid black; */
 }
 
 
@@ -463,19 +539,61 @@ margin-top: 40px;
     border-color: #e0e0e0;
 }
 
-.como{
+.paper {
+    display: flex;
+    margin-left: 350px;
+}
+
+.paper svg {
+    margin-top: 15px;
+    width: 20px;
+    margin-right: 15px;
+    
+}
+
+.formulaire textarea {
+    width: 525px;
+    margin-left: 5px;
+}
+
+.formulaire button {
+    background-color: #ce1642;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.paragraph {
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+
+
+
+/* .como{
     display: flex;
     flex-direction: column;
     margin-right: 10px;
     margin-bottom: 20px;
     width: 530px;
-}
+} */
 
-.checkbox{
+/* .checkbox{
     width: 15px;
     height: 15px;
+} */
+
+.check {
+    display: flex;
 }
 
+.check input {
+    width: 15px;
+}
 
 .parent { 
     height: 800px;
@@ -499,12 +617,14 @@ margin-top: 40px;
 .flex i {
     margin-top: 25px;
     color: #ce1642;
-    font-size: 20px;
+    font-size: 30px;
+    margin-right: 60px;
 }
 
 .right {
     width: 50%;
     height: 800px;
+    margin-bottom: 10px;
 }
 
 
@@ -546,6 +666,16 @@ margin-top: 40px;
 .post {
     height: 200px;
     width: 50%;
+    margin-left: 20px;
+}
+
+.post h5 {
+    font-size: 15px;
+    color: #ce1642;
+}
+
+.post h4{
+    font-size: 20px;
 }
 
 .tiret {
@@ -557,13 +687,29 @@ margin-top: 40px;
 }
 
 .adresse {
-    height: 110px;
-    width: 120px;
+    height: 120px;
+    width: 140px;
     padding: 10px;
     background-color: #ffffff;
     border-radius: 20px;
     line-height: 10px;
     margin-top: 10px;
+    line-height: 0;
+}
+
+.book {
+    display: flex;
+}
+
+.book i {
+    margin-top: 6px;
+    color: #ce1642;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.book p {
+    margin-left: 15px;
 }
 
 .left button{
@@ -598,6 +744,7 @@ margin-top: 40px;
     margin-left: 150px;
     display: grid;
     grid-template-columns: repeat(5,1fr);
+    /* border: 1px solid black; */
 }
 
 .sponsort {
@@ -648,25 +795,31 @@ margin-top: 40px;
     font-size: 40px;
 }
 
+
 .botum {
     border: 1px solid;
 }
 
 .form input{
    height: 40px;
+   position: relative;
+   border-radius: 10px;
 }
 
 .form button {
     height: 45px;
     background-color: #ce1642;
     border: none;
+    position: relative;
+    right: 20px;
+    border-radius: 0 10px 10px 0;
 }
 
 
 
 footer {
     background-color: #ce1642;
-    height: 80px;
+    height: 70px;
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
